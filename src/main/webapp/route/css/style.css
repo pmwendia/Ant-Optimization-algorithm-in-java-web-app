@@ -1,0 +1,480 @@
+body {
+  background-color: #ececec;
+  margin: 0;
+  min-height: 100vh;
+  /* display: flex;
+  flex-direction: column; */
+}
+/* .page-container {
+  flex: 1;
+} */
+/* Styles for the navigation */
+nav {
+  background-color: #424242;
+  overflow: visible;
+  margin-bottom: 30px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+nav li {
+  float: left;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #0044ff;
+}
+
+nav ul li {
+  padding: 1rem;
+}
+
+/* Styles for the contact-container */
+.contact-container {
+  width: 60%;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #eeeeee;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container label,
+.contact-container input,
+.contact-container textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  /* background-color: #b4b4b4; */
+}
+
+.contact-container input[type="text"],
+input[type="email"],
+input[type="textarea"] {
+  background-color: #fdfdfd;
+}
+
+/* Style the contact info section */
+.container-con {
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  width: fit-content;
+}
+
+/* Style the contact info section */
+.contact-info {
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  width: fit-content;
+}
+
+.contact-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-info li {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.contact-info strong {
+  font-weight: bold;
+}
+
+/* Styling for cards */
+.card {
+  margin: 0 auto;
+  margin-left: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.card-log {
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  z-index: 1000;
+  display: none;
+}
+/* Styles for buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Styles for the footer */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  padding: 30px;
+}
+
+.footer-col {
+  flex-basis: 33.33%;
+}
+
+.footer-col h4 {
+  margin-bottom: 20px;
+}
+
+.footer-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-col li {
+  margin-bottom: 10px;
+}
+
+.footer-col a {
+  color: white;
+}
+
+.login-register {
+  display: flex;
+  align-items: center;
+}
+
+.login-register a {
+  color: #fff;
+  padding: 10px 20px;
+  background-color: #333;
+  border-radius: 5px;
+  text-decoration: none;
+  float: right;
+}
+
+.login-register a:hover {
+  background-color: #555;
+}
+
+.login-register button {
+  color: #fff;
+  padding: 10px 20px;
+  background-color: #333;
+  border-radius: 5px;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.login-register button:hover {
+  background-color: #555;
+}
+
+.login-register a:first-child {
+  margin-right: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 450px;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+textarea {
+  height: 150px;
+}
+
+button[type='submit'] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* button[type='submit']:hover {
+  background-color: #0062cc;
+} */
+
+
+/* Style the social media section */
+.social-media {
+  margin-top: 2rem;
+}
+
+.social-media h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-media ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media li {
+  margin: 0 1rem;
+}
+
+
+/* Style the FAQ section */
+.faq {
+  margin-top: 2rem;
+}
+
+.faq h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.faq ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.faq li {
+  margin-bottom: 1rem;
+}
+
+.faq h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.faq p {
+  font-size: 1.2rem;
+}
+
+/* Login page styles */
+.login-container {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 60px;
+  /* text-align: center; */
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+
+}
+
+.login-container button[type="submit"] {
+  padding: 0.5rem 1rem;
+  background-color: #42cf01;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.login-container a {
+  /* background-color: #ccc; */
+  margin-left: 10px;
+}
+
+.login-container button[type="submit"]:hover {
+  background-color: #00189e;
+}
+
+/* Registration page styles */
+.register-container {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 30px;
+  /* text-align: center; */
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.register-container form {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+}
+
+.register-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+
+}
+
+.register-container input[type="text"],
+.register-container input[type="password"],
+.register-container input[type="email"],
+.register-container input[type="tel"],
+.register-container input[type="date"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.register-container button[type="submit"] {
+  padding: 0.5rem 1rem;
+  background-color: #0a2abd;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  width: 100%;
+  display: inline-block;
+}
+
+.register-container button[type="reset"] {
+  background-color: #ccc;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  width: 100%;
+  display: inline-block;
+
+}
+
+.register-container button[type="submit"]:hover {
+  background-color: rgb(72, 255, 0);
+}
+
+.register-container button[type="reset"]:hover {
+  background-color: #c52121;
+}
+/* Table styles */
+table {
+  width: 60%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+tr:hover {
+  background-color: #eaeaea;
+}
+
+/* Delete button styles */
+.delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.delete-btn:hover {
+  background-color: #ff1a1a;
+  text-decoration: none;
+}
