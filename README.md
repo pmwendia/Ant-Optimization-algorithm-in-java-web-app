@@ -2,10 +2,10 @@
 
 ## system requirements:
 
-Java jdk-14
-
-maven
-
-Intellij Idea IDE
-
-MySQL database
+  Java jdk-14
+  
+  maven
+  
+  Intellij Idea IDE
+  
+  MySQL database
